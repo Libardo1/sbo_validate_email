@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='sbo_validate_email',
-      version = '1.01',
+      version = '1.02',
       download_url = 'git@github.com:sefagerberg/sbo_validate_email.git',
       py_modules = ('validate_email',),
       author = 'Evan Fagerberg',
