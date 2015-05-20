@@ -83,10 +83,12 @@ def get_mx_record(email):
         try:
             MX_DNS_CACHE[hostname] = DNS.mxlookup(hostname)
         except ServerError as e:
-            if e.rcode == 3:  # NXDOMAIN (Non-Existent Domain)
+            if e.rcode == 3 or e.rcode == 2:  # NXDOMAIN (Non-Existent Domain) or SERVFAIL
                 MX_DNS_CACHE[hostname] = None
             else:
                 raise
+        except DNS.Base.TimeoutError:
+            MX_DNS_CACHE[hostname] = None
 
     return MX_DNS_CACHE[hostname]
 
