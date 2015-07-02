@@ -8,7 +8,7 @@ sbo_validate_email is a package for Python that check if an email is valid, prop
 Dependency
 ==========
 
-For check the domain mx and verify email exits you must have the `pyDNS` package installed::
+For checking the domain mx and verify email exits you must have the `pyDNS` package installed::
 
     pip install pyDNS
 
