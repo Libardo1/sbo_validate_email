@@ -36,5 +36,8 @@ Releasing a new egg
 
 To upload a new nest egg to our internal PyPI repository (after you've incremented the version number and updated the changelog file):
 
+
 $ python setup.py sdist upload -r internal
+
+
 More information and setup steps can be found :doc:`here <internal-pypi>`.
