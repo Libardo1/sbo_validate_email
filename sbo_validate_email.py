@@ -31,7 +31,7 @@ except (ImportError, AttributeError):
 # even when it's not strictly necessary.  This way we don't forget
 # when it is necessary.)
 #
-WSP = r'[\s]'                                       # see 2.2.2. Structured Header Field Bodies
+WSP = r'[\s]'                                        # see 2.2.2. Structured Header Field Bodies
 CRLF = r'(?:\r\n)'                                   # see 2.2.3. Long Header Fields
 NO_WS_CTL = r'\x01-\x08\x0b\x0c\x0f-\x1f\x7f'        # see 3.2.1. Primitive Tokens
 QUOTED_PAIR = r'(?:\\.)'                             # see 3.2.2. Quoted characters
