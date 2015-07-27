@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='sbo_validate_email',
-      version = '1.06',
+      version = '1.07',
       download_url = 'git@github.com:safarijv/sbo_validate_email.git',
       py_modules = ('sbo_validate_email',),
       author = 'Evan Fagerberg',
